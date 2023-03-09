@@ -13,19 +13,35 @@ namespace RpgChatGPTDemo
         }
 
         [SerializeField] private Asset.GameSetting _gameSetting;
+        [SerializeField] private Character.Protagonist _protagonist;
         [SerializeField] private Character.ChatGPTNpc[] _npcs;
 
+        private Character.ProtagonistInputController _inputController;
         private GameState _gameState;
 
         private async void Start()
         {
+            _inputController = new Character.ProtagonistInputController();
+            _inputController.RegisterWASDInput(inputValue =>
+            {
+                _protagonist?.Move(inputValue);
+            });
+            _inputController.RegisterMouseMoveInput(inputValue =>
+            {
+                _protagonist?.Rotate(inputValue);
+            });
+
             var network = new Network.ChatGPTNetwork(_gameSetting.OpenAiApiKey, _gameSetting.ChatGptModel);
 
             foreach (var npc in _npcs)
                 npc.Prepare(network);
             _gameState = GameState.Idle;
 
-            await _GameLoop(_npcs);
+            await UniTask.WhenAny(new[]
+            {
+                _GameLoop(_npcs),
+                _inputController.LoopActions()
+            });
         }
 
         private async UniTask _GameLoop(
@@ -66,10 +82,12 @@ namespace RpgChatGPTDemo
 
         private void Update()
         {
+            /*
             if (Input.anyKeyDown && _gameState == GameState.Idle)
             {
                 _gameState = GameState.CommunicateNpc;
             }
+            */
         }
     }
 }
