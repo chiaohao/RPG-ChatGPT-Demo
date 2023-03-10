@@ -33,6 +33,14 @@ public class @CharacterAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=2)""
+                },
+                {
+                    ""name"": ""Action"",
+                    ""type"": ""Value"",
+                    ""id"": ""c833fe43-8f27-4792-9902-58298dc95ed1"",
+                    ""expectedControlType"": ""Double"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=2)""
                 }
             ],
             ""bindings"": [
@@ -101,6 +109,17 @@ public class @CharacterAction : IInputActionCollection, IDisposable
                     ""action"": ""Rotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa5cb338-70e5-460a-b883-29c5075d56f7"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -123,6 +142,7 @@ public class @CharacterAction : IInputActionCollection, IDisposable
         m_Protagonist = asset.FindActionMap("Protagonist", throwIfNotFound: true);
         m_Protagonist_Movement = m_Protagonist.FindAction("Movement", throwIfNotFound: true);
         m_Protagonist_Rotation = m_Protagonist.FindAction("Rotation", throwIfNotFound: true);
+        m_Protagonist_Action = m_Protagonist.FindAction("Action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -174,12 +194,14 @@ public class @CharacterAction : IInputActionCollection, IDisposable
     private IProtagonistActions m_ProtagonistActionsCallbackInterface;
     private readonly InputAction m_Protagonist_Movement;
     private readonly InputAction m_Protagonist_Rotation;
+    private readonly InputAction m_Protagonist_Action;
     public struct ProtagonistActions
     {
         private @CharacterAction m_Wrapper;
         public ProtagonistActions(@CharacterAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Protagonist_Movement;
         public InputAction @Rotation => m_Wrapper.m_Protagonist_Rotation;
+        public InputAction @Action => m_Wrapper.m_Protagonist_Action;
         public InputActionMap Get() { return m_Wrapper.m_Protagonist; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -195,6 +217,9 @@ public class @CharacterAction : IInputActionCollection, IDisposable
                 @Rotation.started -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnRotation;
                 @Rotation.performed -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnRotation;
                 @Rotation.canceled -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnRotation;
+                @Action.started -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnAction;
+                @Action.performed -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnAction;
+                @Action.canceled -= m_Wrapper.m_ProtagonistActionsCallbackInterface.OnAction;
             }
             m_Wrapper.m_ProtagonistActionsCallbackInterface = instance;
             if (instance != null)
@@ -205,6 +230,9 @@ public class @CharacterAction : IInputActionCollection, IDisposable
                 @Rotation.started += instance.OnRotation;
                 @Rotation.performed += instance.OnRotation;
                 @Rotation.canceled += instance.OnRotation;
+                @Action.started += instance.OnAction;
+                @Action.performed += instance.OnAction;
+                @Action.canceled += instance.OnAction;
             }
         }
     }
@@ -222,5 +250,6 @@ public class @CharacterAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnRotation(InputAction.CallbackContext context);
+        void OnAction(InputAction.CallbackContext context);
     }
 }

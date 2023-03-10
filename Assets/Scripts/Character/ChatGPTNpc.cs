@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using RpgChatGPTDemo.Network;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -25,6 +26,8 @@ namespace RpgChatGPTDemo.Character
 
         private ChatGPTNetwork _network;
         private IReadOnlyList<ChatGPTNetwork.ChatCompletionMessage> _reservedMessages;
+        private Action<Collider> _enterTriggerAction;
+        private Action<Collider> _exitTriggerAction;
 
         public void Prepare(ChatGPTNetwork network)
         {
@@ -32,6 +35,26 @@ namespace RpgChatGPTDemo.Character
             _reservedMessages = _pretrainedMessages
                 .Select(message => message.ConvertToNetworkMessage())
                 .ToList();
+        }
+
+        public void RegisterColliderEnterTrigger(Action<Collider> action)
+        {
+            _enterTriggerAction += action;
+        }
+
+        public void UnregisterColliderEnterTrigger(Action<Collider> action)
+        {
+            _enterTriggerAction -= action;
+        }
+
+        public void RegisterColliderExitTrigger(Action<Collider> action)
+        {
+            _exitTriggerAction += action;
+        }
+
+        public void UnregisterColliderExitTrigger(Action<Collider> action)
+        {
+            _exitTriggerAction -= action;
         }
 
         async UniTask<string> INpc.Communicate(string content)
@@ -47,6 +70,16 @@ namespace RpgChatGPTDemo.Character
 
             var result = await _network.PostChatCompletion(messages);
             return result.Choices.First().Message["content"];
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            _enterTriggerAction?.Invoke(other);
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            _exitTriggerAction?.Invoke(other);
         }
     }
 
