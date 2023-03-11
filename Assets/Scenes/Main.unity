@@ -10445,7 +10445,7 @@ MonoBehaviour:
   m_ChildAlignment: 8
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -18163,6 +18163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Npc
       objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1403967654}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_RootOrder
       value: 5

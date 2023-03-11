@@ -87,8 +87,6 @@ namespace RpgChatGPTDemo
             {
                 try
                 {
-                    if (_gameState != GameState.Idle)
-                        Debug.Log(_gameState);
                     switch (_gameState)
                     {
                         case GameState.Idle:
@@ -100,14 +98,10 @@ namespace RpgChatGPTDemo
                             {
                                 await _interactableDialogView.Render(
                                     content => npc.Communicate(content),
-                                    "Communicate",
+                                    npc.InitialCommunicationContent,
                                     new[]
-                                    { 
-                                        new[]
-                                        { 
-                                            "A sword",
-                                            "An apple"
-                                        }
+                                    {
+                                        npc.OptionCommunicationContent
                                     });
                             }
                             _gameState = GameState.Idle;

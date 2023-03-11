@@ -22,14 +22,25 @@ namespace RpgChatGPTDemo.Character
             public string Content;
         }
 
+        [SerializeField] private GameObject _colliderTriggerHint;
+        [SerializeField] private Transform _cameraTransform;
+
+        [Header("Chat Setting")]
         [SerializeField] private Message[] _pretrainedMessages;
+        [SerializeField] private string _initialCommunicationContent;
+        [SerializeField] private string[] _optionCommunicationContent;
 
         private ChatGPTNetwork _network;
         private IReadOnlyList<ChatGPTNetwork.ChatCompletionMessage> _reservedMessages;
         private Action<Collider> _enterTriggerAction;
         private Action<Collider> _exitTriggerAction;
 
-        public void Prepare(ChatGPTNetwork network)
+        IReadOnlyCollection<string> INpc.OptionCommunicationContent => _optionCommunicationContent;
+
+        string INpc.InitialCommunicationContent => _initialCommunicationContent;
+
+        public void Prepare(
+            ChatGPTNetwork network)
         {
             _network = network;
             _reservedMessages = _pretrainedMessages
@@ -75,11 +86,18 @@ namespace RpgChatGPTDemo.Character
         private void OnTriggerEnter(Collider other)
         {
             _enterTriggerAction?.Invoke(other);
+            _colliderTriggerHint.gameObject.SetActive(true);
+        }
+
+        private void OnTriggerStay(Collider other)
+        {
+            _colliderTriggerHint.transform.forward = _cameraTransform.forward;
         }
 
         private void OnTriggerExit(Collider other)
         {
             _exitTriggerAction?.Invoke(other);
+            _colliderTriggerHint.gameObject.SetActive(false);
         }
     }
 
