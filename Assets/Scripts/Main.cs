@@ -28,6 +28,7 @@ namespace RpgChatGPTDemo
         [SerializeField] private Asset.GameSetting _gameSetting;
         [SerializeField] private Character.Protagonist _protagonist;
         [SerializeField] private NpcInfo[] _npcInfos;
+        [SerializeField] private UI.InteractableDialogView _interactableDialogView;
 
         private Character.ProtagonistInputController _inputController;
         private GameState _gameState;
@@ -51,6 +52,8 @@ namespace RpgChatGPTDemo
                 if (_gameState == GameState.Idle && _triggeredNpcId != null)
                     _gameState = GameState.CommunicateNpc;
             });
+
+            _interactableDialogView.Initialize(_inputController);
 
             var network = new Network.ChatGPTNetwork(_gameSetting.OpenAiApiKey, _gameSetting.ChatGptModel);
 
@@ -95,8 +98,17 @@ namespace RpgChatGPTDemo
                         case GameState.CommunicateNpc:
                             if (npcDicts.TryGetValue(_triggeredNpcId, out var npc))
                             {
-                                var answer = await npc.Communicate("Communicate");
-                                Debug.Log(answer);
+                                await _interactableDialogView.Render(
+                                    content => npc.Communicate(content),
+                                    "Communicate",
+                                    new[]
+                                    { 
+                                        new[]
+                                        { 
+                                            "A sword",
+                                            "An apple"
+                                        }
+                                    });
                             }
                             _gameState = GameState.Idle;
                             break;
