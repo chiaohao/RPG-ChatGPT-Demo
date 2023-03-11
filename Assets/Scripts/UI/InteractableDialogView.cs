@@ -40,8 +40,11 @@ namespace RpgChatGPTDemo.UI
             {
                 foreach (var seq in keyWordSequence)
                 {
-                    var userOption = await _GetUserOption(seq);
-                    await _RenderContext(contextGenerator, userOption);
+                    if (seq != null && seq.Count() > 0)
+                    {
+                        var userOption = await _GetUserOption(seq);
+                        await _RenderContext(contextGenerator, userOption);
+                    }
                 }
             }
 

@@ -307,6 +307,105 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3602432658d7f1540978cbbd6875ad2d, type: 3}
+--- !u!1001 &27387515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762939812}
+    m_Modifications:
+    - target: {fileID: 5341929224827739846, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_text
+      value: '[whitespace]
+
+        Sorcerer'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_Name
+      value: Npc Sorcerer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1403967654}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.data[0]
+      value: Magic skill
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.data[1]
+      value: Vampire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[0].Content
+      value: You are acting as a sorcerer in an RPG game.  When I talk to you with
+        the word "Communicate", you reply me a random sentence to tell me a keyword
+        of magic. When I talk to you with the words "Magic skill" , you reply me
+        a random sentence to tell me to abandon learning magics. When I talk to you
+        with the words "Vampire" , you reply me a random sentence to tell me you
+        are afraid of the vampire king.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[1].Content
+      value: 'Communicate: The power of the arcane flows through you like a river,
+        ready to be harnessed with a single word.  Magic skill: Beware, young adventurer,
+        for the study of magic is not for the faint of heart. It requires great discipline,
+        focus, and sacrifice. Are you sure you have what it takes?  Vampire: Ah,
+        the vampire king... I dare not speak his name, lest he hear us and come for
+        us. He is a creature of great power and cunning, and even the bravest sorcerers
+        fear him.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 55.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+--- !u!4 &27387516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 27387515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &29220915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1046453777464574, guid: 1aad01ae01d836647b215e40f1f4c1a7, type: 3}
@@ -422,6 +521,104 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 60f048e3ccfd7d0498e095661396963b, type: 3}
+--- !u!1001 &40524951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762939812}
+    m_Modifications:
+    - target: {fileID: 5341929224827739846, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_text
+      value: '[whitespace]
+
+        Missionary'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_Name
+      value: Npc Missionary
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1403967654}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.data[0]
+      value: God
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[0].Content
+      value: 'You are acting as a missionary in an RPG game.   When I talk to you
+        with the word "Communicate", you reply me a random sentence to do missionary
+        work.  When I talk to you with the words "God" , you reply me a random sentence
+        to tell me something about God. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[1].Content
+      value: 'If you say "Communicate":  The best way to communicate God''s love
+        is by showing compassion to those in need.  If you say "God":  God is often
+        described as omniscient, omnipotent, and omnipresent, meaning He is all-knowing,
+        all-powerful, and present everywhere at the same time.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 79.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.754
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+--- !u!4 &40524952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 40524951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &49707585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1438797800468804, guid: 7087784e228be8745af45599a5130532, type: 3}
@@ -1533,6 +1730,96 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4607489187838822, guid: 00e2e59cbc04eab4a982218df54ce70b, type: 3}
   m_PrefabInstance: {fileID: 187175898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &188168908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762939812}
+    m_Modifications:
+    - target: {fileID: 5341929224827739846, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_text
+      value: '[whitespace]
+
+        Beggar'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_Name
+      value: Npc Beggar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1403967654}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[0].Content
+      value: 'You are acting as a beggar in an RPG game.   When I talk to you with
+        the word "Communicate", you reply me a random sentence to ask me to give
+        you some money or breads. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[1].Content
+      value: Good sir, spare a coin or two for a poor soul down on their luck?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 77.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+--- !u!4 &188168909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 188168908}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &188635340
 PrefabInstance:
@@ -2756,6 +3043,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 264414c28ea0fbb41b924fd17d9228b3, type: 3}
+--- !u!4 &307493207 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 6846502481135186298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &315197838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,6 +4043,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: caf770415cf8b3745b977df80c57628b, type: 3}
+--- !u!114 &446464219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 188168908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80787ac44e22b4b43b3c65242fdc90d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &464197415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6269,6 +6572,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835789832631930, guid: bdf8e7438a7816543998181bd3067573, type: 3}
   m_PrefabInstance: {fileID: 756525729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &762939811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762939812}
+  m_Layer: 0
+  m_Name: Npcs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762939812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762939811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 307493207}
+  - {fileID: 27387516}
+  - {fileID: 40524952}
+  - {fileID: 1944417436}
+  - {fileID: 188168909}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &763262767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12673,8 +13011,16 @@ MonoBehaviour:
   _gameSetting: {fileID: 11400000, guid: 0005256329b981740a68166f630e5113, type: 2}
   _protagonist: {fileID: 1188154721}
   _npcInfos:
-  - _id: Npc1
+  - _id: Vendor
     _npc: {fileID: 350478720}
+  - _id: Sorcerer
+    _npc: {fileID: 1462483870}
+  - _id: Missionary
+    _npc: {fileID: 2112035544}
+  - _id: Swordman
+    _npc: {fileID: 1491076545}
+  - _id: Beggar
+    _npc: {fileID: 446464219}
   _interactableDialogView: {fileID: 763939884}
 --- !u!4 &1462310681
 Transform:
@@ -12690,6 +13036,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1462483870 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 27387515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80787ac44e22b4b43b3c65242fdc90d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1465036224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1733909988577898, guid: e88b7bb02ae149940a5a0cddf34fe370, type: 3}
@@ -12933,6 +13290,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4607489187838822, guid: 00e2e59cbc04eab4a982218df54ce70b, type: 3}
   m_PrefabInstance: {fileID: 1488367511}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1491076545 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 1944417435}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80787ac44e22b4b43b3c65242fdc90d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1494561683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1574705480282506, guid: 9e6377f4cae22eb4194f71c6e76c37b9, type: 3}
@@ -16409,6 +16777,104 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7710c12951e94d24eb1b65f105f6823e, type: 3}
+--- !u!1001 &1944417435
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762939812}
+    m_Modifications:
+    - target: {fileID: 5341929224827739846, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_text
+      value: '[whitespace]
+
+        Swordsman'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_Name
+      value: Npc Swordsman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1403967654}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _optionCommunicationContent.Array.data[0]
+      value: Dragon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[0].Content
+      value: 'You are acting as a swordsman in an RPG game.   When I talk to you
+        with the word "Communicate", you reply me a random sentence to show your
+        rare sword skills.  When I talk to you with the words "Dragon" , you reply
+        me a random sentence to tell your battle story against the dragon. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: _pretrainedMessages.Array.data[1].Content
+      value: If you want to communicate with me, then let your sword do the talking! 
+        I once battled a dragon so fierce, its flames turned the very air into ash.
+        But with my trusty sword in hand, I carved my way through its scales and
+        emerged victorious!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+--- !u!4 &1944417436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 1944417435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1945313138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17661,6 +18127,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4702229198241056, guid: 0ba258545da721e488ecb71ffd143b6f, type: 3}
   m_PrefabInstance: {fileID: 2109217201}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2112035544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+  m_PrefabInstance: {fileID: 40524951}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80787ac44e22b4b43b3c65242fdc90d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2113206500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18157,11 +18634,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 762939812}
     m_Modifications:
+    - target: {fileID: 5341929224827739846, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
+      propertyPath: m_text
+      value: '[whitespace]
+
+        Vendor'
+      objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133573, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_Name
-      value: Npc
+      value: Npc Vendor
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133818, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: _cameraTransform
@@ -18169,7 +18652,7 @@ PrefabInstance:
       objectReference: {fileID: 1403967654}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18189,7 +18672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -18197,7 +18680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6846502480785133819, guid: d36abcd1e380e914ba7de18ccc31fd1a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
