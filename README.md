@@ -1,5 +1,6 @@
 # RPG-ChatGPT-Demo
-A proof-of-concept implementation of an RPG demo game with ChatGPT-based NPCS.
+A proof-of-concept implementation of an RPG demo game with ChatGPT-based NPCS.  
+[Demo Video](https://youtu.be/WZDFDsvAhWY)
 
 ## 1. Setup
 1. Open `Assets/GameSetting.asset` in Unity and fill in your OpenAI api key.  
