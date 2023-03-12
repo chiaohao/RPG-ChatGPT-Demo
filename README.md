@@ -8,6 +8,6 @@ A proof-of-concept implementation of an RPG demo game with ChatGPT-based NPCS.
 ## 2. Edit your own npc
 See the sample prefab `Assets/Prefabs/Npc.prefab`, all you have to do is replace the fields `Pretrained Messages`, `Initial Communication Content`, `Option Communication Content`. Like what you do on ChatGPT playground, try to find a sequence of dialogs to make ChatGPT response you a corresonding sentence when you tell it a specific keyword.  
 
-For example below, I asked ChatGPT to act as a vendor with some settings and found it work perfectly with my keywords, so next step I filled the dialog into prefab setting. About `Pretrained Messages`, what you talked to ChatGPT is with the role tag `user` and what ChatGPT responsed you is with the role tag `assistant`.  
+For example below, I asked ChatGPT to act as a vendor with some settings and found it work perfectly with my keywords, so next step I filled the dialog into prefab setting. About `Pretrained Messages`, what you talked to ChatGPT is with the role tag **User** and what ChatGPT responsed you is with the role tag **Assistant**.  
 ![ChatGPTVendorExperimentToPrefabSetting](https://github.com/chiaohao/RPG-ChatGPT-Demo/blob/main/README%20Materials/ChatGPTVendorExperimentToPrefabSetting.png)
   
